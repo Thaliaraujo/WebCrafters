@@ -26,23 +26,62 @@
 }
 
 .banner--text{
-    text-align: center;
     font-weight: 300;
+    text-align: center;
 }
 
 .banner--link{
-    color: var(--secundary-color);
-    text-align: center;
     font-weight: 700;
+    text-align: center;
+    color: var(--secundary-color);
+    padding: 1rem;
     border-radius: 2rem;
     background-color: var(--primary-color);
     background-image: url(../image/iconSeta.svg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: .5rem;
-    padding: 1rem; 
+    margin-top: 4rem; 
+}
+
+.banner--scroll{
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1024px ) {
+    .banner--title{
+        font-size: 2rem;
+    }
+    
+    .banner--text{
+        font-size: 1.5rem;
+    }
+    
+    .banner--link{
+        font-size: 1.5rem;
+        padding: 1.5rem 2.5rem;
+    }
+    
+    .banner--scroll{
+        margin-top: 3rem;
+    }
 }
 
 @media screen and (min-width: 1600px ) {
+    .banner--title{
+        font-size: 4rem;
+    }
     
+    .banner--text{
+        font-size: 2rem;
+    }
+    
+    .banner--link{
+        font-size: 2rem;
+        padding: 2rem 3.5rem;
+    }
+    
+    .banner--scroll{
+        margin-top: 5rem;
+    }
 }
