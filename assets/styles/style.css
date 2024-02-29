@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root{
+    --primary-font: 'Comic+Neue';
+    --secundary-color: #0C1C28;
+    --primary-color: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navigationMenu {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    padding: 1.5rem; 
+}
+
+.logo--link{
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navigationMenu--burguer{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navigationMenu__itens {
+    display: none;
+    list-style-type: none;
+    /* padding: 1rem; */
+}
+
+.navigationMenu__itens li{
+    margin-bottom: 2rem;
+}
+
+.navigationMenu__itens a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+} 
+

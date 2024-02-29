@@ -1,4 +1,5 @@
 function clickMenu() {
+    let itens = document.getElementById("itens");
     if(itens.style.display == 'block') {
         itens.style.display = 'none';
     } else {

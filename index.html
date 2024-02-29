@@ -5,16 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebCrafters</title>
         <meta name="description" content="Transforme suas ideias em realidade digital">
-        <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script defer src="./assets/scripts/main.js"></script>
     </head>
     <body>
         <header>
             <nav class="navigationMenu">
-                <span class="navigationMenu--logo">WebCrafters</span>
-                <img src="./assets/menu.svg" alt="Menu" id="menu" onclick="clickMenu()"/>
+                <!-- <h1 class="logo"><a class="logo--link" href="/index.html">WebCrafters</a></h1> -->
+                <button class="navigationMenu--burguer" onclick="clickMenu()">
+                    <img src="./assets/image/menu.svg" alt="Menu">
+                </button>
                 <ul class="navigationMenu__itens" id="itens">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="#">Sobre Nós</a></li>
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Contato</a></li>
@@ -23,7 +28,5 @@
         </header>
         <main></main>
         <footer></footer>
-
-        <script src="./main.js"></script>
     </body>
 </html>
