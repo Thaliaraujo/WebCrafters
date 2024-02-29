@@ -8,25 +8,59 @@
         <link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/styles/reset.css">
         <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <script defer src="./assets/scripts/main.js"></script>
     </head>
     <body>
         <header>
-            <nav class="navigationMenu">
-                <!-- <h1 class="logo"><a class="logo--link" href="/index.html">WebCrafters</a></h1> -->
-                <button class="navigationMenu--burguer" onclick="clickMenu()">
-                    <img src="./assets/image/menu.svg" alt="Menu">
-                </button>
-                <ul class="navigationMenu__itens" id="itens">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
+            <nav class="menu">
+                <h1><a class="logo--link" href="index.html">WebCrafters</a></h1>
+                <div class="menuMobile">
+                    <input class="menuMobile--input" id="menu" type="checkbox"> 
+                    <label class="menuMobile--label" for="menu">
+                      <span class="menuMobile--span"></span>
+                    </label>
+            
+                    <ul class="menuMobile__list">
+                        <li class="menuMobile__list--item">
+                            <a class="menuMobile__list--link" href="#">Serviços</a>
+                        </li>
+                        <li class="menuMobile__list--item">
+                            <a class="menuMobile__list--link" href="#">Clínica</a>
+                        </li>
+                        <li class="menuMobile__list--item">
+                            <a class="menuMobile__list--link" href="#">Sobre Nós</a>
+                        </li>
+                        <li class="menuMobile__list--item">
+                            <a class="menuMobile__list--link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="menuDesktop">            
+                    <ul class="menuDesktop__list">
+                      <li class="menuDesktop__list--item">
+                        <a class="menuDesktop__list--link" href="#">Serviços</a>
+                      </li>
+                      <li class="menuDesktop__list--item">
+                        <a class="menuDesktop__list--link" href="#">Clínica</a>
+                      </li>
+                      <li class="menuDesktop__list--item">
+                        <a class="menuDesktop__list--link" href="#">Sobre Nós</a>
+                      </li>
+                      <li class="menuDesktop__list--item">
+                        <a class="menuDesktop__list--link" href="#">Contato</a>
+                      </li>
+                    </ul>
+                </div>
             </nav>
         </header>
-        <main></main>
+        <main>
+            <section class="banner">
+                <h2 class="banner--title">Lorem ipsum dolor sit amet.</h2>
+                <p class="banner--text">Lorem ipsum dolor sit amet, coctetur.</p>
+                <a class="banner--link">lorem ipsum</a>
+            </section>
+        </main>
         <footer></footer>
     </body>
 </html>

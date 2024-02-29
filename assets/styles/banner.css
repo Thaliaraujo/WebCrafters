@@ -1,0 +1,48 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; 
+    height: 30vh;
+    position: relative;
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.banner--title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.banner--text{
+    text-align: center;
+    font-weight: 300;
+}
+
+.banner--link{
+    color: var(--secundary-color);
+    text-align: center;
+    font-weight: 700;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    background-image: url(../image/iconSeta.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: .5rem;
+    padding: 1rem; 
+}
+
+@media screen and (min-width: 1600px ) {
+    
+}

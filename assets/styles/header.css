@@ -1,38 +1,102 @@
-.navigationMenu {
+.menu{
     display: flex;
-    flex-direction: column; 
-    align-items: flex-end; 
-    padding: 1.5rem; 
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 7rem;
+    box-shadow: 0px 1px 10px 0px rgba(102, 102, 102, 0.15);
 }
 
 .logo--link{
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 2px;
     color: var(--primary-color);
 }
 
-.navigationMenu--burguer{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.navigationMenu__itens {
+.menuMobile--input{
     display: none;
-    list-style-type: none;
-    padding: 1rem;
 }
 
-.navigationMenu__itens li{
-    margin-bottom: 2rem;
+.menuMobile--input:checked ~ .menuMobile--label > .menuMobile--span {
+    background-image: url("../image/menu.svg");
 }
 
-.navigationMenu__itens a{
+.menuMobile--input:checked~.menuMobile__list{
+    display: block;
+}
+
+.menuMobile--span{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("../image/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menuMobile__list {
+    display: none;
+    position: absolute;
+    top: 10%;
+    width: 40vw;
+    right: 0; 
+    background-color: var(--secundary-color);
+    z-index: 1;
+}
+
+.menuMobile__list--item{
+    text-align: right;
+    padding: 0 1rem 1rem 0;
+}
+
+.menuMobile__list--link{
     text-transform: uppercase;
     text-decoration: none;
 }
 
-a:hover {
-    opacity: 0.7;
-} 
+.menuDesktop{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu{
+        height: 10rem;
+    }
+
+    .logo--link{
+        font-size: 2rem;
+    }
+    
+    .menuDesktop{
+        display: block;
+    }
+
+    .menuDesktop__list{
+        display: flex;
+        justify-content: space-around;
+        width: 70vw;
+    }
+    
+    .menuDesktop__list--link{
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--primary-color);
+    }
+
+    .menuMobile{
+       display: none;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .logo--link{
+        font-size: 3rem;
+    }
+    .menuDesktop__list--link{
+        font-size: 2rem;
+    }
+}
