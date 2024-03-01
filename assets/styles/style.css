@@ -2,11 +2,14 @@
 @import url(./header.css);
 @import url(./banner.css);
 @import url(./services.css);
+@import url(./galery.css);
+@import url(./testimonials.css);
 
 :root{
     --primary-font: 'Comic+Neue';
     --secundary-color: #0C1C28;
     --primary-color: #FFFFFF;
+    --blue: #38A1C6;
 }
 
 *{
