@@ -37,10 +37,6 @@
     padding: 1rem;
     border-radius: 2rem;
     background-color: var(--primary-color);
-    background-image: url(../image/iconSeta.svg);
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: .5rem;
     margin-top: 4rem; 
 }
 

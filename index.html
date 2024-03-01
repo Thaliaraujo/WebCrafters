@@ -59,7 +59,7 @@
                 <h2 class="banner--title">Lorem ipsum dolor sit amet.</h2>
                 <p class="banner--text">Lorem ipsum dolor sit amet, coctetur.</p>
                 <a class="banner--link" href="#">lorem ipsum</a>
-                <a class="banner--scroll" href="#"><img src="./assets/image/scroll.svg"></a>
+                <a class="banner--scroll" href="#contact"><img src="./assets/image/scroll.svg"></a>
             </section>
             <section class="services">
                 <ul class="contentServices__list">
@@ -135,16 +135,18 @@
                     </li>
                 </ul>
             </section>
-            <section class="contact">
-                <h2 class="contact--title">Lorem ipsum</h2>
-                <form class="contactForm">
-                    <div class="contactForm--content">
-                        <label for="name">
-                            <input type="text" id="name" placeholder="Nome" />
+            <section class="contact" id="contact">
+                <h2 class="contact--title">Entre em contato conosco</h2>
+                <form class="contactForm" id="form">
+                    <div class="contactForm__content">
+                        <label for="nameInput"> 
+                            <input type="text" id="nameInput" placeholder="Nome" />
                         </label>
                         <label for="surname">
                             <input type="text" id="surname" placeholder="Sobrenome" />
                         </label>
+                    </div>
+                    <div class="contactForm__content">
                         <label for="email">
                             <input type="email" id="email" placeholder="E-mail" />
                         </label>
@@ -152,12 +154,13 @@
                             <input type="number" id="phone" placeholder="Telefone" />
                         </label>
                     </div>
-                    <textarea placeholder="Mensagem"></textarea>
+                    <textarea id="message" placeholder="Mensagem"></textarea>
+                    <button type="submit" id="submit">Enviar</button>
                 </form>
             </section>
         </main>
         <footer>
-            <h3 class="footer--title">© 2024 Sitename - Todos os direitos reservados</h3>
+            <h3 class="footer--title">© 2024 WebCrafters - Todos os direitos reservados</h3>
         </footer>
     </body>
 </html>
