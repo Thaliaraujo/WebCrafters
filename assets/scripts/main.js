@@ -32,7 +32,7 @@ form.addEventListener('submit', (event) => {
         return;
     };
 
-    // Criar um objeto com os dados do formulário
+    // Cria um objeto com os dados do formulário
     const formData = {
         name: name,
         surname: surname,
@@ -41,7 +41,7 @@ form.addEventListener('submit', (event) => {
         message: message
     };
 
-    // Enviar os dados para o servidor usando a API Fetch
+    // Envia os dados para o servidor usando a API Fetch
     fetch('http://localhost:3000/register', {
         method: 'POST',
         headers: {
