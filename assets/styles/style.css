@@ -4,6 +4,8 @@
 @import url(./services.css);
 @import url(./galery.css);
 @import url(./testimonials.css);
+@import url(./contact.css);
+@import url(./footer.css);
 
 :root{
     --primary-font: 'Comic+Neue';
