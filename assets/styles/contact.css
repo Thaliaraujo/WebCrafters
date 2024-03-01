@@ -53,6 +53,8 @@ input{
  
 textarea{
     padding: .75rem;
+    width: 60%;
+    height: 20vh;
     overflow: hidden;
 } 
 
@@ -91,11 +93,7 @@ button{
     input{
         padding: 1rem 2.5rem;
     }
-
-    textarea{
-        padding: 3rem;
-    }
-     
+    
     input::placeholder,
     textarea::placeholder{
         font-size: 1rem;

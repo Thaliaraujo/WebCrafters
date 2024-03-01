@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-shrink: 0;
     width: 100vw;
     height: 7rem;
     box-shadow: 0px 1px 10px 0px rgba(102, 102, 102, 0.15);
@@ -18,10 +17,6 @@
 
 .menuMobile--input{
     display: none;
-}
-
-.menuMobile--input:checked ~ .menuMobile--label > .menuMobile--span {
-    background-image: url("../image/menu.svg");
 }
 
 .menuMobile--input:checked~.menuMobile__list{
@@ -40,7 +35,6 @@
 .menuMobile__list {
     display: none;
     position: absolute;
-    top: 10%;
     width: 40vw;
     right: 0; 
     background-color: var(--secundary-color);
@@ -48,11 +42,12 @@
 }
 
 .menuMobile__list--item{
-    text-align: right;
-    padding: 0 1rem 1rem 0;
+    text-align: center;
+    padding: 1rem;
 }
 
 .menuMobile__list--link{
+    font-size: .8rem;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -62,41 +57,28 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .menu{
-        height: 10rem;
+   .logo--link{
+        font-size: 1.5rem;
     }
 
-    .logo--link{
-        font-size: 2rem;
+    .menuMobile{
+        display: none;
     }
-    
+
     .menuDesktop{
         display: block;
+        width: 70vw;
     }
 
     .menuDesktop__list{
         display: flex;
         justify-content: space-around;
-        width: 70vw;
     }
     
     .menuDesktop__list--link{
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-decoration: none;
         text-transform: uppercase;
         color: var(--primary-color);
-    }
-
-    .menuMobile{
-       display: none;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .logo--link{
-        font-size: 3rem;
-    }
-    .menuDesktop__list--link{
-        font-size: 2rem;
     }
 }

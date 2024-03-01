@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebCrafters</title>
         <meta name="description" content="Transforme suas ideias em realidade digital">
-        <link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/image/favicon.png">
         <link rel="stylesheet" href="./assets/styles/reset.css">
         <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
         <script defer src="./assets/scripts/main.js"></script>
@@ -13,25 +13,24 @@
     <body>
         <header>
             <nav class="menu">
-                <h1><a class="logo--link" href="index.html">WebCrafters</a></h1>
+                <h1><a class="logo--link" href="/">WebCrafters</a></h1>
                 <nav class="menuMobile">
                     <input class="menuMobile--input" id="menu" type="checkbox"> 
                     <label class="menuMobile--label" for="menu">
                       <span class="menuMobile--span"></span>
                     </label>
-            
                     <ul class="menuMobile__list">
                         <li class="menuMobile__list--item">
-                            <a class="menuMobile__list--link" href="/index.html">Home</a>
+                            <a class="menuMobile__list--link" href="/">Home</a>
                         </li>
                         <li class="menuMobile__list--item">
-                            <a class="menuMobile__list--link" href="#">Sobre Nós</a>
+                            <a class="menuMobile__list--link" href="#testimonials">Sobre Nós</a>
                         </li>
                         <li class="menuMobile__list--item">
-                            <a class="menuMobile__list--link" href="#">Serviços</a>
+                            <a class="menuMobile__list--link" href="#services">Serviços</a>
                         </li>
                         <li class="menuMobile__list--item">
-                            <a class="menuMobile__list--link" href="#">Contato</a>
+                            <a class="menuMobile__list--link" href="#contact">Contato</a>
                         </li>
                     </ul>
                 </nav>
@@ -39,16 +38,16 @@
                 <nav class="menuDesktop">            
                     <ul class="menuDesktop__list">
                       <li class="menuDesktop__list--item">
-                        <a class="menuDesktop__list--link" href="/index.html">Home</a>
+                        <a class="menuDesktop__list--link" href="/">Home</a>
                       </li>
                       <li class="menuDesktop__list--item">
-                        <a class="menuDesktop__list--link" href="#">Sobre Nós</a>
+                        <a class="menuDesktop__list--link" href="#testimonials">Sobre Nós</a>
                       </li>
                       <li class="menuDesktop__list--item">
-                        <a class="menuDesktop__list--link" href="#">Serviços</a>
+                        <a class="menuDesktop__list--link" href="#services">Serviços</a>
                       </li>
                       <li class="menuDesktop__list--item">
-                        <a class="menuDesktop__list--link" href="#">Contato</a>
+                        <a class="menuDesktop__list--link" href="#contact">Contato</a>
                       </li>
                     </ul>
                 </nav>
@@ -56,12 +55,12 @@
         </header>
         <main>
             <section class="banner">
-                <h2 class="banner--title">Lorem ipsum dolor sit amet.</h2>
-                <p class="banner--text">Lorem ipsum dolor sit amet, coctetur.</p>
-                <a class="banner--link" href="#">lorem ipsum</a>
+                <h2 class="banner--title">WebCrafters</h2>
+                <p class="banner--text">Transforme suas ideias em realidade digital</p>
+                <a class="banner--link" href="#services">Serviços</a>
                 <a class="banner--scroll" href="#contact"><img src="./assets/image/scroll.svg"></a>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <ul class="contentServices__list">
                     <li class="contentServices__item">
                         <img class="contentServices--image" src="./assets/image/icon_4.svg" alt="Diamond">
@@ -111,7 +110,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="Testimonials">
+            <section class="Testimonials" id="testimonials">
                 <h2 class="Testimonials--title">Depoimentos</h2>
                 <p class="Testimonials--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec nibh eu risus gravida</p>
                 <ul class="contentTestimonials__list">

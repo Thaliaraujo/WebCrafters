@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw; 
-    height: 30vh;
+    height: 50vh;
     position: relative;
 }
 
@@ -23,6 +23,8 @@
 .banner--title{
     font-size: 1.5rem;
     font-weight: 700;
+    padding: 1rem 0;
+    letter-spacing: 3px;
 }
 
 .banner--text{
@@ -31,12 +33,13 @@
 }
 
 .banner--link{
+    font-size: .8rem;
     font-weight: 700;
     text-align: center;
     color: var(--secundary-color);
-    padding: 1rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     background-color: var(--primary-color);
+    padding: .7rem 2rem;
     margin-top: 4rem; 
 }
 
@@ -54,30 +57,7 @@
     }
     
     .banner--link{
-        font-size: 1.5rem;
-        padding: 1.5rem 2.5rem;
-    }
-    
-    .banner--scroll{
-        margin-top: 3rem;
-    }
-}
-
-@media screen and (min-width: 1600px ) {
-    .banner--title{
-        font-size: 4rem;
-    }
-    
-    .banner--text{
-        font-size: 2rem;
-    }
-    
-    .banner--link{
-        font-size: 2rem;
-        padding: 2rem 3.5rem;
-    }
-    
-    .banner--scroll{
-        margin-top: 5rem;
+        font-size: 1rem;
+        padding: 1rem 2.5rem;
     }
 }
